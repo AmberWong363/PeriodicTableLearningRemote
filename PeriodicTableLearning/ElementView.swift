@@ -15,7 +15,7 @@ struct ElementView: View {
         ZStack {
             Rectangle()
                 .frame(width: 100, height: 100)
-                .foregroundColor(element.color)
+                .foregroundColor(element.enabled ? element.color : Color.disabledColor)
                 .cornerRadius(2)
             VStack {
                 HStack {

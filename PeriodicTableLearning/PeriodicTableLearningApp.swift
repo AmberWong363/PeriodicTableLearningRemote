@@ -14,7 +14,7 @@ struct PeriodicTableLearningApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(elementList)
+            ContentView().environmentObject(ElementList())
         }
     }
 }
