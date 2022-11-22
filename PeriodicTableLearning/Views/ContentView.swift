@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var currentElement = Element()
     @State var displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
     @StateObject var elementList : ElementList = ElementList()
+    @State var disList : Set<Element> = []
     @State var num = 0
     
     var body: some View {
@@ -50,8 +51,11 @@ struct ContentView: View {
                         text = ""
                         status = "Pending..."
                         displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
+                        currentElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
                         
-                        currentElement = elementList.list[Int.random(in: 0...elementList.list.count - 1)]
+                        repeat {
+                            currentElement = elementList.list[Int.random(in: 0...elementList.list.count - 1)]
+                        } while (disList.contains(currentElement))
                         
                         num = Int.random(in: 1...3)
                         
@@ -88,7 +92,7 @@ struct ContentView: View {
                 
                 
             }
-            TableView(eList: $elementList.list)
+            TableView(eList: $elementList.list, dList: $disList)
                 .tabItem {
                     Label("Table", systemImage: "gear")
                 }

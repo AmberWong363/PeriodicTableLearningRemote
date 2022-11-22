@@ -13,13 +13,13 @@ class ElementList: ObservableObject {
     
     init (_ list : [Element] = [
                                 Element("Hydrogen", aNum: 1, aMass: 1.01, symbol: "H", color: Color.nonMetColor, group: 1, period: 1),
-                                Element("Helium", aNum: 2, aMass: 4, symbol: "He", color: Color.nonMetColor, group: 2, period: 1),
                                 Element("Lithium", aNum: 3, aMass: 6.94, symbol: "Li", color: Color.alkaliColor, group: 1, period: 2),
                                 Element("Sodium", aNum: 11, aMass: 22.99, symbol: "Na", color: Color.alkaliColor, group: 1, period: 3),
                                 Element("Potassium", aNum: 19, aMass: 39.1, symbol: "K", color: Color.alkaliColor, group: 1, period: 4),
                                 Element("Rubidium", aNum: 37, aMass: 85.47, symbol: "Rb", color: Color.alkaliColor, group: 1, period: 5),
                                 Element("Cesium", aNum: 55, aMass: 132.9, symbol: "Cs", color: Color.alkaliColor, group: 1, period: 6),
                                 Element("Francium", aNum: 87, aMass: 223, symbol: "Fr", color: Color.alkaliColor, group: 1, period: 7),
+                                Element("Helium", aNum: 2, aMass: 4, symbol: "He", color: Color.nonMetColor, group: 2, period: 1),
                                 Element("Beryllium", aNum: 4, aMass: 9.01, symbol: "Be", color: Color.alkalineColor, group: 2, period: 2),
                                 Element("Magnesium", aNum: 12, aMass: 24.31, symbol: "Mg", color: Color.alkalineColor, group: 2, period: 3),
                                 Element("Calcium", aNum: 20, aMass: 40.08, symbol: "Ca", color: Color.alkalineColor, group: 2, period: 3),

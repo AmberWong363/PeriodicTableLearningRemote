@@ -8,7 +8,12 @@
 import Foundation
 import SwiftUI
 
-class Element : Identifiable, ObservableObject {
+class Element : Identifiable, ObservableObject, Hashable {
+    static func == (lhs: Element, rhs: Element) -> Bool {
+        return lhs.group == rhs.group && lhs.period == rhs.period
+    }
+    
+    
     @Published var name : String
     @Published var aNum : Int
     @Published var aMass : Double
@@ -22,6 +27,11 @@ class Element : Identifiable, ObservableObject {
     func toggle() {
         enabled.toggle()
         objectWillChange.send()
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(group)
+        hasher.combine(period)
     }
     
     init (_ name : String = "Hydrogen", aNum : Int = 1, aMass : Double = 1.01, symbol : String = "H", color : Color = Color.elementColor, enabled : Bool = true, group : Int = 1, period : Int = 1) {
