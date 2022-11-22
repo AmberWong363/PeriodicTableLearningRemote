@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */; };
+		A3FBBCA3292D00A300A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBCA2292D00A300A9B066 /* Assets.xcassets */; };
+		A3FBBCA6292D00A300A9B066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBCA5292D00A300A9B066 /* Preview Assets.xcassets */; };
+		A3FBBCC9292D010100A9B066 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBCC8292D010100A9B066 /* Elements.swift */; };
+		A3FBBCCB292D01C300A9B066 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBCCA292D01C300A9B066 /* ElementView.swift */; };
+		A3FBBCCD292D01F700A9B066 /* ElementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBCCC292D01F700A9B066 /* ElementList.swift */; };
+		A3FBBCCF292D0DDC00A9B066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBCCE292D0DDC00A9B066 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3FBBCAC292D00A400A9B066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FBBC93292D009C00A9B066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FBBC9A292D009C00A9B066;
+			remoteInfo = PeriodicTableLearning;
+		};
+		A3FBBCB6292D00A400A9B066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FBBC93292D009C00A9B066 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FBBC9A292D009C00A9B066;
+			remoteInfo = PeriodicTableLearning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3FBBC9B292D009C00A9B066 /* PeriodicTableLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodicTableLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableLearningApp.swift; sourceTree = "<group>"; };
+		A3FBBCA2292D00A300A9B066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3FBBCA5292D00A300A9B066 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3FBBCAB292D00A400A9B066 /* PeriodicTableLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriodicTableLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FBBCB5292D00A400A9B066 /* PeriodicTableLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriodicTableLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FBBCC8292D010100A9B066 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		A3FBBCCA292D01C300A9B066 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
+		A3FBBCCC292D01F700A9B066 /* ElementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementList.swift; sourceTree = "<group>"; };
+		A3FBBCCE292D0DDC00A9B066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FBBC98292D009C00A9B066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCA8292D00A400A9B066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCB2292D00A400A9B066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3FBBC92292D009C00A9B066 = {
+			isa = PBXGroup;
+			children = (
+				A3FBBC9D292D009C00A9B066 /* PeriodicTableLearning */,
+				A3FBBC9C292D009C00A9B066 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FBBC9C292D009C00A9B066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FBBC9B292D009C00A9B066 /* PeriodicTableLearning.app */,
+				A3FBBCAB292D00A400A9B066 /* PeriodicTableLearningTests.xctest */,
+				A3FBBCB5292D00A400A9B066 /* PeriodicTableLearningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FBBC9D292D009C00A9B066 /* PeriodicTableLearning */ = {
+			isa = PBXGroup;
+			children = (
+				A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */,
+				A3FBBCC8292D010100A9B066 /* Elements.swift */,
+				A3FBBCCE292D0DDC00A9B066 /* ContentView.swift */,
+				A3FBBCCA292D01C300A9B066 /* ElementView.swift */,
+				A3FBBCCC292D01F700A9B066 /* ElementList.swift */,
+				A3FBBCA2292D00A300A9B066 /* Assets.xcassets */,
+				A3FBBCA4292D00A300A9B066 /* Preview Content */,
+			);
+			path = PeriodicTableLearning;
+			sourceTree = "<group>";
+		};
+		A3FBBCA4292D00A300A9B066 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A3FBBCA5292D00A300A9B066 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3FBBC9A292D009C00A9B066 /* PeriodicTableLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FBBCBF292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearning" */;
+			buildPhases = (
+				A3FBBC97292D009C00A9B066 /* Sources */,
+				A3FBBC98292D009C00A9B066 /* Frameworks */,
+				A3FBBC99292D009C00A9B066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeriodicTableLearning;
+			productName = PeriodicTableLearning;
+			productReference = A3FBBC9B292D009C00A9B066 /* PeriodicTableLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3FBBCAA292D00A400A9B066 /* PeriodicTableLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FBBCC2292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearningTests" */;
+			buildPhases = (
+				A3FBBCA7292D00A400A9B066 /* Sources */,
+				A3FBBCA8292D00A400A9B066 /* Frameworks */,
+				A3FBBCA9292D00A400A9B066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FBBCAD292D00A400A9B066 /* PBXTargetDependency */,
+			);
+			name = PeriodicTableLearningTests;
+			productName = PeriodicTableLearningTests;
+			productReference = A3FBBCAB292D00A400A9B066 /* PeriodicTableLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3FBBCB4292D00A400A9B066 /* PeriodicTableLearningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FBBCC5292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearningUITests" */;
+			buildPhases = (
+				A3FBBCB1292D00A400A9B066 /* Sources */,
+				A3FBBCB2292D00A400A9B066 /* Frameworks */,
+				A3FBBCB3292D00A400A9B066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FBBCB7292D00A400A9B066 /* PBXTargetDependency */,
+			);
+			name = PeriodicTableLearningUITests;
+			productName = PeriodicTableLearningUITests;
+			productReference = A3FBBCB5292D00A400A9B066 /* PeriodicTableLearningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FBBC93292D009C00A9B066 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A3FBBC9A292D009C00A9B066 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A3FBBCAA292D00A400A9B066 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A3FBBC9A292D009C00A9B066;
+					};
+					A3FBBCB4292D00A400A9B066 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A3FBBC9A292D009C00A9B066;
+					};
+				};
+			};
+			buildConfigurationList = A3FBBC96292D009C00A9B066 /* Build configuration list for PBXProject "PeriodicTableLearning" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3FBBC92292D009C00A9B066;
+			productRefGroup = A3FBBC9C292D009C00A9B066 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FBBC9A292D009C00A9B066 /* PeriodicTableLearning */,
+				A3FBBCAA292D00A400A9B066 /* PeriodicTableLearningTests */,
+				A3FBBCB4292D00A400A9B066 /* PeriodicTableLearningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3FBBC99292D009C00A9B066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FBBCA6292D00A300A9B066 /* Preview Assets.xcassets in Resources */,
+				A3FBBCA3292D00A300A9B066 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCA9292D00A400A9B066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCB3292D00A400A9B066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FBBC97292D009C00A9B066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FBBCCD292D01F700A9B066 /* ElementList.swift in Sources */,
+				A3FBBCCF292D0DDC00A9B066 /* ContentView.swift in Sources */,
+				A3FBBCCB292D01C300A9B066 /* ElementView.swift in Sources */,
+				A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */,
+				A3FBBCC9292D010100A9B066 /* Elements.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCA7292D00A400A9B066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FBBCB1292D00A400A9B066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3FBBCAD292D00A400A9B066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FBBC9A292D009C00A9B066 /* PeriodicTableLearning */;
+			targetProxy = A3FBBCAC292D00A400A9B066 /* PBXContainerItemProxy */;
+		};
+		A3FBBCB7292D00A400A9B066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FBBC9A292D009C00A9B066 /* PeriodicTableLearning */;
+			targetProxy = A3FBBCB6292D00A400A9B066 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3FBBCBD292D00A400A9B066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3FBBCBE292D00A400A9B066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FBBCC0292D00A400A9B066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeriodicTableLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3FBBCC1292D00A400A9B066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeriodicTableLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3FBBCC3292D00A400A9B066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriodicTableLearning.app/PeriodicTableLearning";
+			};
+			name = Debug;
+		};
+		A3FBBCC4292D00A400A9B066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeriodicTableLearning.app/PeriodicTableLearning";
+			};
+			name = Release;
+		};
+		A3FBBCC6292D00A400A9B066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriodicTableLearning;
+			};
+			name = Debug;
+		};
+		A3FBBCC7292D00A400A9B066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VA3GFWL4H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QED.PeriodicTableLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeriodicTableLearning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FBBC96292D009C00A9B066 /* Build configuration list for PBXProject "PeriodicTableLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FBBCBD292D00A400A9B066 /* Debug */,
+				A3FBBCBE292D00A400A9B066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FBBCBF292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FBBCC0292D00A400A9B066 /* Debug */,
+				A3FBBCC1292D00A400A9B066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FBBCC2292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FBBCC3292D00A400A9B066 /* Debug */,
+				A3FBBCC4292D00A400A9B066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FBBCC5292D00A400A9B066 /* Build configuration list for PBXNativeTarget "PeriodicTableLearningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FBBCC6292D00A400A9B066 /* Debug */,
+				A3FBBCC7292D00A400A9B066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FBBC93292D009C00A9B066 /* Project object */;
+}
