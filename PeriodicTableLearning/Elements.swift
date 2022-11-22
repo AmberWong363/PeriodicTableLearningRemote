@@ -26,4 +26,12 @@ class Element {
 
 extension Color {
     static let elementColor = Color("ElementColor")
+    static let acColor = Color("Ac")
+    static let alkaliColor = Color("Alkali")
+    static let alkalineColor = Color("Alkaline")
+    static let laColor = Color("La")
+    static let metalloidColor = Color("Metalloid")
+    static let metalColor = Color("Metals")
+    static let nonMetColor = Color("NonMetals")
+    static let transMetColor = Color("TransitionMetals")
 }

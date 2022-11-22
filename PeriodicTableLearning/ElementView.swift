@@ -15,7 +15,8 @@ struct ElementView: View {
         ZStack {
             Rectangle()
                 .frame(width: 100, height: 100)
-                .foregroundColor(Color.elementColor)
+                .foregroundColor(element.color)
+                .cornerRadius(2)
             VStack {
                 HStack {
                     Text("\(element.aNum)")
