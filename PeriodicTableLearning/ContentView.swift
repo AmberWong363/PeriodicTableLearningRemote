@@ -31,7 +31,7 @@ struct ContentView: View {
             HStack {
                 Button {
                     displayedElement = currentElement
-                    if text == currentElement.symbol {
+                    if text.lowercased() == currentElement.symbol.lowercased() {
                         status = "Correct!"
                     } else {
                         status = "Try Again!"
@@ -81,8 +81,6 @@ struct ContentView: View {
                 .padding(.horizontal)
                 .disableAutocorrection(true)
         }
-        
-        
     }
 }
 

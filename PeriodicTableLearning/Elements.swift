@@ -13,12 +13,14 @@ class Element {
     var aNum : Int
     var aMass : Double
     var symbol : String
+    var color : Color
     
-    init (_ name : String = "Hydrogen", aNum : Int = 1, aMass : Double = 1.01, symbol : String = "H") {
+    init (_ name : String = "Hydrogen", aNum : Int = 1, aMass : Double = 1.01, symbol : String = "H", color : Color = Color.elementColor) {
         self.name = name
         self.aNum = aNum
         self.aMass = aMass
         self.symbol = symbol
+        self.color = color
     }
 }
 
