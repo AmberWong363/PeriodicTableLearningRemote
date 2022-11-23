@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3437877292E7295004E393D /* TablePView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437876292E7295004E393D /* TablePView.swift */; };
 		A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */; };
 		A3FBBCA3292D00A300A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBCA2292D00A300A9B066 /* Assets.xcassets */; };
 		A3FBBCA6292D00A300A9B066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBCA5292D00A300A9B066 /* Preview Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3437876292E7295004E393D /* TablePView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePView.swift; sourceTree = "<group>"; };
 		A3FBBC9B292D009C00A9B066 /* PeriodicTableLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodicTableLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableLearningApp.swift; sourceTree = "<group>"; };
 		A3FBBCA2292D00A300A9B066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				A3FBBCCE292D0DDC00A9B066 /* ContentView.swift */,
 				A3FBBCCA292D01C300A9B066 /* ElementView.swift */,
+				A3437876292E7295004E393D /* TablePView.swift */,
 				A3FBBCD2292D2D4A00A9B066 /* TableView.swift */,
 				A3FBBCD4292D55F200A9B066 /* ElementSmallView.swift */,
 			);
@@ -269,6 +272,7 @@
 				A3FBBCCB292D01C300A9B066 /* ElementView.swift in Sources */,
 				A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */,
 				A3FBBCC9292D010100A9B066 /* Elements.swift in Sources */,
+				A3437877292E7295004E393D /* TablePView.swift in Sources */,
 				A3FBBCD5292D55F200A9B066 /* ElementSmallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

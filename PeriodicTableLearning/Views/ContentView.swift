@@ -76,6 +76,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .foregroundColor(Color.black)
                     }
+                    .disabled(disList.count == elementList.list.count)
                     
                 }
                 
@@ -94,14 +95,12 @@ struct ContentView: View {
             }
             TableView(eList: $elementList.list, dList: $disList)
                 .tabItem {
-                    Label("Table", systemImage: "gear")
+                    Label("Table S", systemImage: "gear")
+                }
+            TablePView(eList: $elementList.list, dList: $disList)
+                .tabItem {
+                    Label("Table P", systemImage: "gear")
                 }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

@@ -10,7 +10,6 @@ import SwiftUI
 struct ElementSmallView: View {
     
     @Binding var element : Element
-//    @Binding var disabled : Bool
     
     var body: some View {
         VStack {

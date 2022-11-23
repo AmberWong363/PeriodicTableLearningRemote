@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct PeriodicTableLearningApp: App {
-    
-    @StateObject var elementList : ElementList = ElementList()
-    
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(ElementList())
+            ContentView()
         }
     }
 }

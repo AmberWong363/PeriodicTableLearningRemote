@@ -22,7 +22,7 @@ struct ElementView: View {
                     Text("\(element.aNum)")
                         .padding(2)
                     Spacer()
-                    Text(String(format: "%.2f", element.aMass))
+                    Text(String(format: Double(Int(element.aMass)) == element.aMass ? "%.0f" : "%.2f", element.aMass))
                         .padding(2)
                 }
                 .padding(.horizontal, 2.0)
