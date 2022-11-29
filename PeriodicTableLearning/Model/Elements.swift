@@ -57,5 +57,6 @@ extension Color {
     static let metalColor = Color("Metals")
     static let nonMetColor = Color("NonMetals")
     static let transMetColor = Color("TransitionMetals")
+    static let nobleColor = Color("Noble")
     static let disabledColor = Color("Disabled")
 }

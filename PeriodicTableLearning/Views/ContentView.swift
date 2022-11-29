@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
     @StateObject var elementList : ElementList = ElementList()
     @State var disList : Set<Element> = []
+    @State var disGList : Set<Int> = []
     @State var num = 0
     
     var body: some View {
@@ -95,11 +96,11 @@ struct ContentView: View {
             }
             TableView(eList: $elementList.list, dList: $disList)
                 .tabItem {
-                    Label("Table S", systemImage: "gear")
+                    Label("Block S", systemImage: "gear")
                 }
             TablePView(eList: $elementList.list, dList: $disList)
                 .tabItem {
-                    Label("Table P", systemImage: "gear")
+                    Label("Block P", systemImage: "gear")
                 }
         }
     }

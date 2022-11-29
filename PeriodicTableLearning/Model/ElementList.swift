@@ -47,7 +47,28 @@ class ElementList: ObservableObject {
                                 Element("Arsenic", aNum: 33, aMass: 74.92, symbol: "As", color: Color.metalloidColor, group: 15, period: 4),
                                 Element("Antimony", aNum: 51, aMass: 121.76, symbol: "Sb", color: Color.metalloidColor, group: 15, period: 5),
                                 Element("Bismuth", aNum: 83, aMass: 208.98, symbol: "Bi", color: Color.metalColor, group: 15, period: 6),
-                                Element("Moscovium", aNum: 115, aMass: 290, symbol: "Mc", color: Color.metalColor, group: 15, period: 7)]) {
+                                Element("Moscovium", aNum: 115, aMass: 290, symbol: "Mc", color: Color.metalColor, group: 15, period: 7),
+                                // G16
+                                Element("Oxygen", aNum: 8, aMass: 15.99, symbol: "O", color: Color.nonMetColor, group: 16, period: 2),
+                                Element("Sulfur", aNum: 16, aMass: 32.06, symbol: "S", color: Color.nonMetColor, group: 16, period: 3),
+                                Element("Selenium", aNum: 34, aMass: 78.97, symbol: "Se", color: Color.nonMetColor, group: 16, period: 4),
+                                Element("Tellurium", aNum: 52, aMass: 127.60, symbol: "Te", color: Color.metalloidColor, group: 16, period: 5),
+                                Element("Polonium", aNum: 84, aMass: 209, symbol: "Po", color: Color.metalColor, group: 16, period: 6),
+                                Element("Livermorium", aNum: 116, aMass: 293, symbol: "Lv", color: Color.metalColor, group: 16, period: 7),
+                                // G17
+                                Element("Fluorine", aNum: 9, aMass: 19.00, symbol: "F", color: Color.nonMetColor, group: 17, period: 2),
+                                Element("Chlorine", aNum: 17, aMass: 35.45, symbol: "Cl", color: Color.nonMetColor, group: 17, period: 3),
+                                Element("Bromine", aNum: 35, aMass: 79.90, symbol: "Br", color: Color.nonMetColor, group: 17, period: 4),
+                                Element("Iodine", aNum: 53, aMass: 126.90, symbol: "I", color: Color.nonMetColor, group: 17, period: 5),
+                                Element("Astatine", aNum: 85, aMass: 210, symbol: "At", color: Color.metalloidColor, group: 17, period: 6),
+                                Element("Tennessine", aNum: 117, aMass: 294, symbol: "Ts", color: Color.metalColor, group: 17, period: 7),
+                                // G18
+                                Element("Neon", aNum: 10, aMass: 20.18, symbol: "Ne", color: Color.nobleColor, group: 18, period: 2),
+                                Element("Argon", aNum: 18, aMass: 39.95, symbol: "Ar", color: Color.nobleColor, group: 18, period: 3),
+                                Element("Krypton", aNum: 36, aMass: 83.80, symbol: "Kr", color: Color.nobleColor, group: 18, period: 4),
+                                Element("Xenon", aNum: 54, aMass: 131.29, symbol: "Xe", color: Color.nobleColor, group: 18, period: 5),
+                                Element("Radon", aNum: 86, aMass: 222, symbol: "Rn", color: Color.nobleColor, group: 18, period: 6),
+                                Element("Oganesson", aNum: 118, aMass: 294, symbol: "Og", color: Color.metalColor, group: 18, period: 7)]) {
         self.list = list
     }
 }
