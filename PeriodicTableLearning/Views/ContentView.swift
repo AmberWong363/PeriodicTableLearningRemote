@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text : String = ""
+    @State var answerColor : Color = Color.gray
     @State var status : String = "Pending..."
     @State var currentElement = Element()
     @State var displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
@@ -25,7 +26,7 @@ struct ContentView: View {
                 Text(status)
                     .padding()
                     .frame(width: 200, height: 50)
-                    .background(Color.gray.opacity(0.5))
+                    .background(answerColor.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(10)
                 
@@ -36,8 +37,10 @@ struct ContentView: View {
                         displayedElement = currentElement
                         if text.lowercased() == currentElement.symbol.lowercased() {
                             status = "Correct!"
+                            answerColor = Color.green
                         } else {
                             status = "Try Again!"
+                            answerColor = Color.red
                         }
                     } label: {
                         Text("Check")
@@ -51,6 +54,7 @@ struct ContentView: View {
                     Button {
                         text = ""
                         status = "Pending..."
+                        answerColor = Color.gray
                         displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
                         currentElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
                         
@@ -62,11 +66,11 @@ struct ContentView: View {
                         
                         switch (num) {
                         case 1:
-                            displayedElement.aNum = currentElement.aNum
+                            displayedElement.name = currentElement.name
                         case 2:
                             displayedElement.aMass = currentElement.aMass
                         default:
-                            displayedElement.name = currentElement.name
+                            displayedElement.aNum = currentElement.aNum
                         }
                         
                     } label: {
@@ -89,18 +93,22 @@ struct ContentView: View {
                     .disableAutocorrection(true)
             }
             .tabItem {
-                Label("Elements", systemImage: "bolt")
+                Label("Elements", systemImage: "questionmark")
                 
                 
                 
             }
             TableView(eList: $elementList.list, dList: $disList)
                 .tabItem {
-                    Label("Block S", systemImage: "gear")
+                    Label("Block S", systemImage: "bolt")
                 }
             TablePView(eList: $elementList.list, dList: $disList)
                 .tabItem {
-                    Label("Block P", systemImage: "gear")
+                    Label("Block P", systemImage: "bolt")
+                }
+            TableDView(eList: $elementList.list, dList: $disList)
+                .tabItem {
+                    Label("Block D", systemImage: "bolt")
                 }
         }
     }

@@ -179,9 +179,3 @@ struct TableView: View {
         }
     }
 }
-
-//struct TableView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TableView(eList: Binding.constant(ElementList().list), dList: Binding.constant([]))
-//    }
-//}

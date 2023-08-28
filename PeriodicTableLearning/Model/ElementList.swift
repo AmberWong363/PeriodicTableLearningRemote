@@ -68,7 +68,58 @@ class ElementList: ObservableObject {
                                 Element("Krypton", aNum: 36, aMass: 83.80, symbol: "Kr", color: Color.nobleColor, group: 18, period: 4),
                                 Element("Xenon", aNum: 54, aMass: 131.29, symbol: "Xe", color: Color.nobleColor, group: 18, period: 5),
                                 Element("Radon", aNum: 86, aMass: 222, symbol: "Rn", color: Color.nobleColor, group: 18, period: 6),
-                                Element("Oganesson", aNum: 118, aMass: 294, symbol: "Og", color: Color.metalColor, group: 18, period: 7)]) {
+                                Element("Oganesson", aNum: 118, aMass: 294, symbol: "Og", color: Color.metalColor, group: 18, period: 7),
+                                // G3
+                                Element("Scandium", aNum: 21, aMass: 44.956, symbol: "Sc", color: Color.transMetColor, group: 3, period: 4),
+                                Element("Yttrium", aNum: 39, aMass: 88.906, symbol: "Y", color: Color.transMetColor, group: 3, period: 5),
+                                Element("Lanthium", aNum: 57, aMass: 138.91, symbol: "La", color: Color.laColor, group: 3, period: 6),
+                                Element("Actinium", aNum: 89, aMass: 227, symbol: "Ac", color: Color.acColor, group: 3, period: 7),
+                                // G4
+                                Element("Titanium", aNum: 22, aMass: 47.867, symbol: "Ti", color: Color.transMetColor, group: 4, period: 4),
+                                Element("Zirconium", aNum: 40, aMass: 91.224, symbol: "Zr", color: Color.transMetColor, group: 4, period: 5),
+                                Element("Hafnium", aNum: 72, aMass: 178.49, symbol: "Hf", color: Color.transMetColor, group: 4, period: 6),
+                                Element("Rutherfordium", aNum: 104, aMass: 267, symbol: "Rf", color: Color.transMetColor, group: 4, period: 7),
+                                // G5
+                                Element("Vanadium", aNum: 23, aMass: 50.942, symbol: "V", color: Color.transMetColor, group: 5, period: 4),
+                                Element("Niobium", aNum: 41, aMass: 92.906, symbol: "Nb", color: Color.transMetColor, group: 5, period: 5),
+                                Element("Tantalum", aNum: 73, aMass: 180.95, symbol: "Ta", color: Color.transMetColor, group: 5, period: 6),
+                                Element("Dubnium", aNum: 105, aMass: 268, symbol: "Db", color: Color.transMetColor, group: 5, period: 7),
+                                // G6
+                                Element("Chromium", aNum: 24, aMass: 51.996, symbol: "Cr", color: Color.transMetColor, group: 6, period: 4),
+                                Element("Molybdenum", aNum: 42, aMass: 95.95, symbol: "Mo", color: Color.transMetColor, group: 6, period: 5),
+                                Element("Tungsten", aNum: 74, aMass: 183.84, symbol: "W", color: Color.transMetColor, group: 6, period: 6),
+                                Element("Seaborgium", aNum: 106, aMass: 269, symbol: "Sg", color: Color.transMetColor, group: 6, period: 7),
+                                // G7
+                                Element("Manganese", aNum: 25, aMass: 54.938, symbol: "Mn", color: Color.transMetColor, group: 7, period: 4),
+                                Element("Technectium", aNum: 43, aMass: 98, symbol: "Tc", color: Color.transMetColor, group: 7, period: 5),
+                                Element("Rhenium", aNum: 75, aMass: 186.21, symbol: "Re", color: Color.transMetColor, group: 7, period: 6),
+                                Element("Bohrium", aNum: 107, aMass: 270, symbol: "Bh", color: Color.transMetColor, group: 7, period: 7),
+                                // G8
+                                Element("Iron", aNum: 26, aMass: 55.845, symbol: "Fe", color: Color.transMetColor, group: 8, period: 4),
+                                Element("Ruthenium", aNum: 44, aMass: 101.07, symbol: "Ru", color: Color.transMetColor, group: 8, period: 5),
+                                Element("Osmium", aNum: 76, aMass: 190.23, symbol: "Os", color: Color.transMetColor, group: 8, period: 6),
+                                Element("Hassium", aNum: 108, aMass: 277, symbol: "Hs", color: Color.transMetColor, group: 8, period: 7),
+                                // G9
+                                Element("Cobalt", aNum: 27, aMass: 58.933, symbol: "Co", color: Color.transMetColor, group: 9, period: 4),
+                                Element("Rhodium", aNum: 45, aMass: 102.91, symbol: "Rh", color: Color.transMetColor, group: 9, period: 5),
+                                Element("Iridium", aNum: 77, aMass: 192.22, symbol: "Ir", color: Color.transMetColor, group: 9, period: 6),
+                                Element("Meitnerium", aNum: 109, aMass: 278, symbol: "Mt", color: Color.transMetColor, group: 9, period: 7),
+                                // G10
+                                Element("Nickel", aNum: 28, aMass: 58.693, symbol: "Ni", color: Color.transMetColor, group: 10, period: 4),
+                                Element("Palladium", aNum: 46, aMass: 106.42, symbol: "Pd", color: Color.transMetColor, group: 10, period: 5),
+                                Element("Platinum", aNum: 78, aMass: 195.08, symbol: "Pt", color: Color.transMetColor, group: 10, period: 6),
+                                Element("Damstadtium", aNum: 110, aMass: 281, symbol: "Mt", color: Color.transMetColor, group: 10, period: 7),
+                                // G11
+                                Element("Copper", aNum: 29, aMass: 63.546, symbol: "Cu", color: Color.transMetColor, group: 11, period: 4),
+                                Element("Silver", aNum: 47, aMass: 107.87, symbol: "Ag", color: Color.transMetColor, group: 11, period: 5),
+                                Element("Gold", aNum: 79, aMass: 196.97, symbol: "Au", color: Color.transMetColor, group: 11, period: 6),
+                                Element("Damstadtium", aNum: 111, aMass: 282, symbol: "Mt", color: Color.transMetColor, group: 11, period: 7),
+                                // G12
+                                Element("Zinc", aNum: 30, aMass: 65.38, symbol: "Zn", color: Color.transMetColor, group: 12, period: 4),
+                                Element("Cadmium", aNum: 48, aMass: 112.41, symbol: "Cd", color: Color.transMetColor, group: 12, period: 5),
+                                Element("Mercury", aNum: 80, aMass: 200.59, symbol: "Hg", color: Color.transMetColor, group: 12, period: 6),
+                                Element("Copernecium", aNum: 112, aMass: 285, symbol: "Cn", color: Color.transMetColor, group: 12, period: 7),
+    ]) {
         self.list = list
     }
 }
