@@ -10,14 +10,17 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text : String = ""
+    @State var list : [(String, Bool)] = []
+    @State var savedName : String = ""
     @State var answerColor : Color = Color.gray
     @State var status : String = "Pending..."
     @State var currentElement = Element()
     @State var displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
-    @StateObject var elementList : ElementList = ElementList()
     @State var disList : Set<Element> = []
     @State var disGList : Set<Int> = []
     @State var num = 0
+    @StateObject var elementList : ElementList = ElementList()
+    @EnvironmentObject var settings : Settings
     
     var body: some View {
         TabView {
@@ -62,17 +65,26 @@ struct ContentView: View {
                             currentElement = elementList.list[Int.random(in: 0...elementList.list.count - 1)]
                         } while (disList.contains(currentElement))
                         
-                        num = Int.random(in: 1...3)
-                        
-                        switch (num) {
-                        case 1:
-                            displayedElement.name = currentElement.name
-                        case 2:
-                            displayedElement.aMass = currentElement.aMass
-                        default:
-                            displayedElement.aNum = currentElement.aNum
+                        for i in settings.options {
+                            if i.1 {
+                                list.append(i)
+                            }
                         }
                         
+                        num = Int.random(in: 0..<list.count)
+                        
+                        savedName = list[num].0
+                        
+                        if savedName == "Atomic Number" {
+                            displayedElement.aNum = currentElement.aNum
+                        } else if savedName == "Molar Mass" {
+                            displayedElement.aMass = currentElement.aMass
+                        } else if savedName == "Name" {
+                            displayedElement.name = currentElement.name
+                        } else {
+                            displayedElement.symbol = currentElement.symbol
+                        }
+                            
                     } label: {
                         Text("New Element")
                             .padding()
@@ -109,6 +121,10 @@ struct ContentView: View {
             TableDView(eList: $elementList.list, dList: $disList)
                 .tabItem {
                     Label("Block D", systemImage: "bolt")
+                }
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }

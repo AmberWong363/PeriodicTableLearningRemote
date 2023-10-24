@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		896D8BB12A956CB600FD79F6 /* TableDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D8BB02A956CB600FD79F6 /* TableDView.swift */; };
 		896D8BB32A956CC200FD79F6 /* TableFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D8BB22A956CC200FD79F6 /* TableFView.swift */; };
+		89C25DEA2AA9107200A0D3A2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C25DE92AA9107200A0D3A2 /* SettingsView.swift */; };
+		89C25DEC2AA9108300A0D3A2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C25DEB2AA9108300A0D3A2 /* Settings.swift */; };
 		A3437877292E7295004E393D /* TablePView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3437876292E7295004E393D /* TablePView.swift */; };
 		A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */; };
 		A3FBBCA3292D00A300A9B066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FBBCA2292D00A300A9B066 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		896D8BB02A956CB600FD79F6 /* TableDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDView.swift; sourceTree = "<group>"; };
 		896D8BB22A956CC200FD79F6 /* TableFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFView.swift; sourceTree = "<group>"; };
+		89C25DE92AA9107200A0D3A2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		89C25DEB2AA9108300A0D3A2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		A3437876292E7295004E393D /* TablePView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePView.swift; sourceTree = "<group>"; };
 		A3FBBC9B292D009C00A9B066 /* PeriodicTableLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodicTableLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FBBC9E292D009C00A9B066 /* PeriodicTableLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableLearningApp.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			children = (
 				A3FBBCC8292D010100A9B066 /* Elements.swift */,
 				A3FBBCCC292D01F700A9B066 /* ElementList.swift */,
+				89C25DEB2AA9108300A0D3A2 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				896D8BB02A956CB600FD79F6 /* TableDView.swift */,
 				896D8BB22A956CC200FD79F6 /* TableFView.swift */,
 				A3FBBCD4292D55F200A9B066 /* ElementSmallView.swift */,
+				89C25DE92AA9107200A0D3A2 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,10 +284,12 @@
 				A3FBBCD3292D2D4A00A9B066 /* TableView.swift in Sources */,
 				896D8BB32A956CC200FD79F6 /* TableFView.swift in Sources */,
 				A3FBBCCB292D01C300A9B066 /* ElementView.swift in Sources */,
+				89C25DEC2AA9108300A0D3A2 /* Settings.swift in Sources */,
 				A3FBBC9F292D009C00A9B066 /* PeriodicTableLearningApp.swift in Sources */,
 				A3FBBCC9292D010100A9B066 /* Elements.swift in Sources */,
 				A3437877292E7295004E393D /* TablePView.swift in Sources */,
 				A3FBBCD5292D55F200A9B066 /* ElementSmallView.swift in Sources */,
+				89C25DEA2AA9107200A0D3A2 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
