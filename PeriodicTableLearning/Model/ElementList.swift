@@ -108,12 +108,12 @@ class ElementList: ObservableObject {
                                 Element("Nickel", aNum: 28, aMass: 58.693, symbol: "Ni", color: Color.transMetColor, group: 10, period: 4),
                                 Element("Palladium", aNum: 46, aMass: 106.42, symbol: "Pd", color: Color.transMetColor, group: 10, period: 5),
                                 Element("Platinum", aNum: 78, aMass: 195.08, symbol: "Pt", color: Color.transMetColor, group: 10, period: 6),
-                                Element("Damstadtium", aNum: 110, aMass: 281, symbol: "Mt", color: Color.transMetColor, group: 10, period: 7),
+                                Element("Damstadtium", aNum: 110, aMass: 281, symbol: "Ds", color: Color.transMetColor, group: 10, period: 7),
                                 // G11
                                 Element("Copper", aNum: 29, aMass: 63.546, symbol: "Cu", color: Color.transMetColor, group: 11, period: 4),
                                 Element("Silver", aNum: 47, aMass: 107.87, symbol: "Ag", color: Color.transMetColor, group: 11, period: 5),
                                 Element("Gold", aNum: 79, aMass: 196.97, symbol: "Au", color: Color.transMetColor, group: 11, period: 6),
-                                Element("Damstadtium", aNum: 111, aMass: 282, symbol: "Mt", color: Color.transMetColor, group: 11, period: 7),
+                                Element("Roentgenium", aNum: 111, aMass: 282, symbol: "Rg", color: Color.transMetColor, group: 11, period: 7),
                                 // G12
                                 Element("Zinc", aNum: 30, aMass: 65.38, symbol: "Zn", color: Color.transMetColor, group: 12, period: 4),
                                 Element("Cadmium", aNum: 48, aMass: 112.41, symbol: "Cd", color: Color.transMetColor, group: 12, period: 5),

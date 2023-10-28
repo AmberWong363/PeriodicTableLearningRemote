@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var savedName : String = ""
     @State var answerColor : Color = Color.gray
     @State var status : String = "Pending..."
-    @State var currentElement = Element()
+    @State var currentElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
     @State var displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
     @State var disList : Set<Element> = []
     @State var disGList : Set<Int> = []
@@ -38,12 +38,42 @@ struct ContentView: View {
                 HStack {
                     Button {
                         displayedElement = currentElement
-                        if text.lowercased() == currentElement.symbol.lowercased() {
-                            status = "Correct!"
-                            answerColor = Color.green
-                        } else {
-                            status = "Try Again!"
-                            answerColor = Color.red
+                        switch(settings.states) {
+                        case .aNum:
+                            if Int(text) == currentElement.aNum {
+                                status = "Correct!"
+                                answerColor = Color.green
+                            } else {
+                                status = "Try Again!"
+                                answerColor = Color.red
+                            }
+
+                        case .molarMass:
+                            if Double(text) == currentElement.aMass {
+                                status = "Correct!"
+                                answerColor = Color.green
+                            } else {
+                                status = "Try Again!"
+                                answerColor = Color.red
+                            }
+
+                        case .name:
+                            if text.lowercased() == currentElement.name.lowercased() {
+                                status = "Correct!"
+                                answerColor = Color.green
+                            } else {
+                                status = "Try Again!"
+                                answerColor = Color.red
+                            }
+
+                        default:
+                            if text.lowercased() == currentElement.symbol.lowercased() {
+                                status = "Correct!"
+                                answerColor = Color.green
+                            } else {
+                                status = "Try Again!"
+                                answerColor = Color.red
+                            }
                         }
                     } label: {
                         Text("Check")
@@ -56,34 +86,50 @@ struct ContentView: View {
                     
                     Button {
                         text = ""
-                        status = "Pending..."
                         answerColor = Color.gray
+                        savedName = ""
+                        list = []
+                        status = "Pending..."
+                        displayedElement = currentElement
                         displayedElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
                         currentElement = Element("?", aNum: 0, aMass: 0, symbol: "?")
+                        
                         
                         repeat {
                             currentElement = elementList.list[Int.random(in: 0...elementList.list.count - 1)]
                         } while (disList.contains(currentElement))
                         
                         for i in settings.options {
-                            if i.1 {
+                            if i.1 == true {
                                 list.append(i)
                             }
                         }
                         
-                        num = Int.random(in: 0..<list.count)
-                        
-                        savedName = list[num].0
+                        savedName = list[Int.random(in: 0..<list.count)].0
                         
                         if savedName == "Atomic Number" {
                             displayedElement.aNum = currentElement.aNum
                         } else if savedName == "Molar Mass" {
                             displayedElement.aMass = currentElement.aMass
-                        } else if savedName == "Name" {
+                        } else if savedName == "Element Name" {
                             displayedElement.name = currentElement.name
                         } else {
                             displayedElement.symbol = currentElement.symbol
                         }
+                        
+                        /*
+                         num = Int.random(in: 1...3)
+                         
+                         switch (num) {
+                         case 1:
+                             displayedElement.name = currentElement.name
+                         case 2:
+                             displayedElement.aMass = currentElement.aMass
+                         default:
+                             displayedElement.aNum = currentElement.aNum
+                         }
+                         */
+                        
                             
                     } label: {
                         Text("New Element")
@@ -97,7 +143,7 @@ struct ContentView: View {
                     
                 }
                 
-                TextField("Element Symbol", text: $text)
+                TextField("Current Unknown", text: $text)
                     .padding()
                     .background(Color.gray.opacity(0.3))
                     .cornerRadius(10)
